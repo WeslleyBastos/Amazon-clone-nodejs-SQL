@@ -18,7 +18,7 @@ exports.getProdutos = (req, res, next) =>{
                             request:{
                                 tipo: "GET",
                                 descricao:"Return product especifico",
-                                url:"httpp://localhost:3002/products/" + prod.id_produto
+                                url:process.env.URL_API + "products" + prod.id_produto
                             }
                         }
                     })
@@ -53,7 +53,7 @@ exports.postProdutos =  (req, res, next) => {
                     request:{
                         tipo: "GET",
                         descricao:"Retorna todos os product",
-                        url:"httpp://localhost:3002/products/"
+                        url:process.env.URL_API + "products"
                     }
                 }
             }
@@ -87,7 +87,7 @@ exports.getUmProduto =  (req, res, next) =>{
                         request:{
                             tipo: "GET",
                             descricao:"Retorna todos os product",
-                            url:"httpp://localhost:3002/products/"
+                            url: process.env.URL_API + "products"
                         }
                     }
                 }
@@ -123,7 +123,7 @@ exports.updateProduto = (req, res, next) =>{
                         request:{
                             tipo: "GET",
                             descricao:"Retorna detalhes de um product",
-                            url:"httpp://localhost:3002/products/" + req.body.id_produto
+                            url:process.env.URL_API + "products" + req.body.id_produto
                         }
                     }
                 }
@@ -147,7 +147,7 @@ exports.updateProduto = (req, res, next) =>{
                         request:{
                             tipo: "POST",
                             descricao: "insere um produto",
-                            url:"httpp://localhost:3002/products/",
+                            url:process.env.URL_API + "products",
                             body:{
                                 nome: "String",
                                 preco: "Number"
