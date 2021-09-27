@@ -1,10 +1,10 @@
 {
-"env": {
-    "MYSQL_USER": "b659cd9087bb24",
-    "MYSQL_PASSWORD": "6736b7c1",
-    "MYSQL_DATABASE": "heroku_c971dfe531e63c9",
-    "MYSQL_HOST": "us-cdbr-east-04.cleardb.com",
-    "MYSQL_PORT": 3306,
-    "JWT_KEY":"segredo"
+    "env": {
+        "MYSQL_USER": "b659cd9087bb24",
+        "MYSQL_PASSWORD": "6736b7c1",
+        "MYSQL_DATABASE": "heroku_c971dfe531e63c9",
+        "MYSQL_HOST": "us-cdbr-east-04.cleardb.com",
+        "MYSQL_PORT": 3306,
+        "JWT_KEY":"segredo"
+        }
     }
-}
